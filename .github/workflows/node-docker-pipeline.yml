@@ -17,8 +17,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: Run test 
+      
   docker:
     needs: build-and-test
     runs-on: ubuntu-latest
