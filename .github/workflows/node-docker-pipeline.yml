@@ -19,7 +19,7 @@ jobs:
 
         -name: Run tests
         run: Run test
-docker:
+  docker:
     needs: build-and-test
     runs-on: ubuntu-latest
     steps:
