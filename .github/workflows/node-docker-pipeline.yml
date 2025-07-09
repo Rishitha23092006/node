@@ -18,10 +18,11 @@ jobs:
         run: npm Install
 
         -name: Run tests
-        run: Run test
+        run: Run test 
   docker:
-    needs: build-and-test
+    
     runs-on: ubuntu-latest
+    needs: build-and-test
     steps:
      -name: Checkout code
      uses: actions/checkout@v2
